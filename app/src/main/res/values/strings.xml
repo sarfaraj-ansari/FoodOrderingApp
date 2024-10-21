@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">FoodOrderingApp</string>
-    <string name="get_pizza">Get Pizza</string>
-    <string name="get_juice">Get Juice</string>
+    <string name="get_restaurant">Get Restaurant</string>
+    <string name="get_menu">Get Menu</string>
 </resources>

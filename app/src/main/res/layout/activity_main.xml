@@ -8,26 +8,26 @@
     tools:context=".core.presentation.activity.MainActivity">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btGetPizza"
+        android:id="@+id/btGetRestaurant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
 
-        android:text="@string/get_pizza"
-        app:layout_constraintEnd_toStartOf="@id/btGetJuice"
+        android:text="@string/get_restaurant"
+        app:layout_constraintEnd_toStartOf="@id/btGetMenu"
         app:layout_constraintStart_toStartOf="parent"
 
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btGetJuice"
+        android:id="@+id/btGetMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
 
-        android:text="@string/get_juice"
+        android:text="@string/get_menu"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/btGetPizza"
+        app:layout_constraintStart_toEndOf="@id/btGetRestaurant"
 
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,8 +37,8 @@
         android:layout_height="wrap_content"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
 
-        app:layout_constraintStart_toStartOf="@id/btGetPizza"
-        app:layout_constraintTop_toBottomOf="@id/btGetPizza"
+        app:layout_constraintStart_toStartOf="@id/btGetRestaurant"
+        app:layout_constraintTop_toBottomOf="@id/btGetRestaurant"
 
         android:layout_marginTop="20dp"
 

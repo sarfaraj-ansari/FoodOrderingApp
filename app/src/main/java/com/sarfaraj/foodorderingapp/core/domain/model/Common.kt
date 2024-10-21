@@ -1,4 +1,3 @@
 package com.sarfaraj.foodorderingapp.core.domain.model
 
-class JuiceModel {
-}
+data class Common(val id: String, val name: String)

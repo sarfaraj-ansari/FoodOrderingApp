@@ -4,18 +4,21 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.sarfaraj.foodorderingapp.databinding.ItemFoodAdapterBinding
+import com.sarfaraj.foodorderingapp.core.domain.model.Common
+import com.sarfaraj.foodorderingapp.databinding.ItemRestaurantAdapterBinding
 
-class AdapterFoodList(private val foodList: List<String>) : Adapter<AdapterFoodList.FoodHolder>() {
-    inner class FoodHolder(private val item: ItemFoodAdapterBinding) : ViewHolder(item.root) {
-        fun binViews(food: String) {
-            item.tvFood.text = food
+class AdapterRestaurant(private val foodList: List<Common>) :
+    Adapter<AdapterRestaurant.FoodHolder>() {
+    inner class FoodHolder(private val item: ItemRestaurantAdapterBinding) : ViewHolder(item.root) {
+        fun binViews(common: Common) {
+            item.tvFood.text = common.name
+            item.tvId.text = common.id
         }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FoodHolder {
         val item =
-            ItemFoodAdapterBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+            ItemRestaurantAdapterBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return FoodHolder(item)
     }
 
