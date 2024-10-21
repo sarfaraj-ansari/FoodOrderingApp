@@ -7,9 +7,9 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.sarfaraj.foodorderingapp.databinding.ItemFoodAdapterBinding
 
 class AdapterFoodList(private val foodList: List<String>) : Adapter<AdapterFoodList.FoodHolder>() {
-    inner class FoodHolder(item: ItemFoodAdapterBinding) : ViewHolder(item.root) {
+    inner class FoodHolder(private val item: ItemFoodAdapterBinding) : ViewHolder(item.root) {
         fun binViews(food: String) {
-
+            item.tvFood.text = food
         }
     }
 

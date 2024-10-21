@@ -1,11 +1,12 @@
 package com.sarfaraj.foodorderingapp.core.data.network
 
-import com.sarfaraj.foodorderingapp.core.data.network.dto.JuiceResponse
-import com.sarfaraj.foodorderingapp.core.data.network.dto.PizzaResponse
+
+import com.sarfaraj.foodorderingapp.core.domain.model.JuiceModel
+import com.sarfaraj.foodorderingapp.core.domain.model.PizzaModel
 import retrofit2.Response
 
 interface ApiService {
-    suspend fun getPizza(): Response<PizzaResponse>
+    suspend fun getPizza(): Response<PizzaModel>
 
-    suspend fun getJuice(): Response<JuiceResponse>
+    suspend fun getJuice(): Response<JuiceModel>
 }
